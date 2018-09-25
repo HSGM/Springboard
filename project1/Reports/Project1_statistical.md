@@ -1,7 +1,7 @@
 
 #### Predictive Strength of each feature on the rate of default
 
-As the objective of the project is to ilustrate the building of a credit scoring model, how each feature related to the default rate was looked at. By doing so it helped in picking out the features that are likely to be useful in the model vs. those that are not. 
+As the objective of the project is to illustrate the building of a credit scoring model, how each feature related to the default rate was looked at. By doing so it helped in picking out the features that are likely to be useful in the model vs. those that are not. 
 
 Bar graphs were plotted that showed the rate of default for each feature by year  at the different levels of the feature. 
 
