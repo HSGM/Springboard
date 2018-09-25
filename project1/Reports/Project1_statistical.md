@@ -1,12 +1,12 @@
 
 #### Predictive Strength of each feature on the rate of default
 
-As the objective of the project is to iluustrate the building of a credit scoring model, how each feature related to the default rate was looked at. By doing so it helped in picking out the features that are likely to be useful in the model vs. those that are not. 
+As the objective of the project is to illustrate the building of a credit scoring model, how each feature related to the default rate was looked at. By doing so it helped in picking out the features that are likely to be useful in the model vs. those that are not. 
 
 Bar graphs were plotted that showed the rate of default for each feature by year  at the different levels of the feature. 
 
 
-From the bar charts looking at rate of default vs each feature by year  and made the following decisions:
+From the bar charts looking at rate of default vs each feature by year the following decisions were made:
 1. Use only the data from 2010-1015 as the data from 2007 -2009 has a lot of variabilty.
 2. Drop the attributes present only in the year 2015.
 3. Drop the attributes only available from 2012( total_rev_hi_lim, tot_cur_bal, tot_coll_amnt, mths_since_last_major_derog, acc_now_delinq, collections_12mths_ex_med)as they are available only form 2012 on and does not show high predictive strength.
@@ -31,6 +31,8 @@ Looking at the bar graphs, evident was the variability present in the data for t
 Correlations between columns :
 Machine learning methods are usually robust in the presence of correlated predictors. However understanding the degree to which predictors are correlated is useful to better understand the relationship between the features with each other and with the outcome. Hence  the correlations between the numeric features was obtained.
 
+
 total_acc and open_acc_quant had a correlation of 0.62. A decision had to be made as to whether we kept one or both? The variable, **total_acc** is the total number of credit lines currently in the borrower's credit file. The variable **open_acc** is the the number of open credit lines in the borrower's credit file. From the bar graphs that was plotted total_acc showed a stronger trend with default rate. So decided to  retain total_acc and drop open_acc.
 
 The correlation of outcome with the features does not seem strong but as expected the **annual_inc quantile** is negatively correlated indicating higher the annual income lower the rate of default and **dti** , the ratio of debt to income is one of the higher correlated features. We would expect to see this feature being significant in 
+
