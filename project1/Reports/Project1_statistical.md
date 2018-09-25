@@ -1,12 +1,12 @@
 
 #### Predictive Strength of each feature on the rate of default
 
-As the objective of the project is to iluustrate the building of a credit scoring model, how each feature related to the default rate was looked at. By doing so it helped in picking out the features that are likely to be useful in the model vs. those that are not. 
+As the objective of the project is to ilustrate the building of a credit scoring model, how each feature related to the default rate was looked at. By doing so it helped in picking out the features that are likely to be useful in the model vs. those that are not. 
 
 Bar graphs were plotted that showed the rate of default for each feature by year  at the different levels of the feature. 
 
 
-From the bar charts looking at rate of default vs each feature by year  and made the following decisions:
+From the bar charts looking at rate of default vs each feature by year the following decisions were made:
 1. Use only the data from 2010-1015 as the data from 2007 -2009 has a lot of variabilty.
 2. Drop the attributes present only in the year 2015.
 3. Drop the attributes only available from 2012( total_rev_hi_lim, tot_cur_bal, tot_coll_amnt, mths_since_last_major_derog, acc_now_delinq, collections_12mths_ex_med)as they are available only form 2012 on and does not show high predictive strength.
