@@ -31,7 +31,7 @@ Here are a few of the images :
 ![fotos](fotos.png)
 
 
-#### Feature Extraction Using Inception V3:
+### Feature Extraction Using Inception V3:
 
 We first use the following code to get the model, along with the pre-trained weights that are the same as that of the imagenet model and store it in a variable called base_model. We also specify that the images be resized to ( 299, 299, 3).
 
@@ -60,10 +60,11 @@ Training A Machine Learning Model: The features and labels extracted by means of
 4. XGBOOST
 
 
-Testing the Models:
-The fine tuned models using the training data was next evaluated using the test images. The Evaluation Metrics and the confusion matrix for each of the above fits are given below.
+### Testing the Models:
+The fine tuned models using the training data was next evaluated using the test images. The Evaluation Metrics and the confusion matrix for each of the above fits are given below. Also reported are the same metrics obtained with the training data. A large difference between model performance between test and train data would indicate overfitting.
 
-#### Evaluation Metrics
+#### Evaluation Metrics for Test Images
+
 
 
 ![logistic](logistic.png)
@@ -73,6 +74,77 @@ The fine tuned models using the training data was next evaluated using the test 
 ![svm](SupportVector.png)
 
 ![xgboost](xgboost.png)
+
+
+The overall performance of the models seem to be comparable with the average scores for Logistic, Random Forest and SVM being 88% for Precision, Recall and F1 where as XGBOOST performance was 85%. The lower performance of XGBOOST is surprising. Is overfitting a concern here?
+
+Below are the **Accuracies** for the Test and Train Data. Accuracy is the ratio of correctly predicted observation to the total observations. As we have balanced number of images per category this measure is reliable.
+
+Model| Logistic|Random Forest| Support Vector| XGBOOST|
+-----|---------|-------------|---------------|----------|
+Train| 0.989|0.997|0.994|0.999|
+Test| 0.881|0.875|0.875| 0.850|
+
+Looking at the drop in accuracies, XGBOOST has the highest drop indicating overfitting affecting this model the most.
+
+How did the models perform for the different categories? Were some rooms more difficult to identify than others?
+
+Below we plot the metrics for ease of comparison:
+
+Overall all the models exhibit the same pattern of ability to identify the room categories. Staircases, pantries and corridors are better identified by all models.
+
+**Precision** which is the proportion of the number of images that were correctly identified out of the  the total number of images that were labelled as belonging to a given room category.
+
+![precision](precision_test.png)
+
+
+Dining rooms, Bedrooms and Living rooms exhibit lower precision scores than the other categories for all models. 
+
+
+**Recall** gives us a measure of how good the model is in detecting the images belonging to a certain category. It is the proportion of images belonging to a category that was correctly identified out of the total number of images of that category present.
+
+![recall](recall_test.png)
+
+In terms of recall kitchens and living rooms exhibit the lowest values for all models.
+
+**F1-Score** is the harmonic mean of precision and recall thus taking into account both measures. Here we see that the most problematic rooms are the living rooms.
+
+![f1score](f1score_test.png)
+
+
+Below are a sample of the images that were incorrectly labelled by most of the models. All the images that were incorrectly labelled are in the notebook. It is interesting to note that many of the wrongly labelled images were common to all four models.
+
+
+
+![wrong1](wrong_pics.png)| 
+
+
+*** What next? Some ways to possibly improve the models.
+
+1. To better understand how the models are categorising the images carry out a LIME analysis. 
+
+2. Train the models using more images for each category .
+
+3. Extract features from a  deeper layer from the inception v3.
+
+4. Combine all four models by using a voting classifier model that would choose the prediction that gets the most votes considering the predictions from each of the four models.
+
+5. Evaluate other  neural networks( eg VGG, ResNet ) for extracting features.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
