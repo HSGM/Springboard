@@ -50,15 +50,15 @@ staircase	|0.95|	1.00|	0.98|	20.0|
 
 |Room     |  precision_score	|recall_score|	f1_score|	support|
 |---------|---------------------|------------|----------|----------|
-bathroom |	0.89 |	0.80 |	0.84 |	20.0 |
-bedroom	 |	0.76 |	0.80	 |0.78	 |20.0 |
-corridor |	0.95 |	0.95 |	0.95 |	20.0 |
-dining_room	 |0.73	 |0.95 |	0.83 |	20.0 |
-kitchen	 |0.88 |	0.70 |	0.78 |	20.0 |
-living room	 |0.72	 |0.65	 |0.68	 |20.0 |
+bathroom |	0.85|	0.85|	0.85 |	20.0 |
+bedroom	 |	0.76 |	0.86	 |0.78	 |20.0 |
+corridor |	0.95 |	1 |	0.98 |	20.0 |
+dining_room	 |0.82	 |0.90 |	0.86 |	20.0 |
+kitchen	 |1 |	0.70 |	0.82 |	20.0 |
+living room	 |0.84	 |0.80	 |0.82	 |20.0 |
 pantry	 |0.95 |	1.00 |	0.98	 |20.0 |
-staircase	 |	0.95 |	0.95 |	0.95 |	20.0 |
-**avg/total**|	0.85|	0.85|	0.85|	160.0|
+staircase	 |	0.86 |	0.98 |	0.90 |	20.0 |
+**avg/total**|	0.88|	0.88|	0.88|	160.0|
 
 
 The Confusion Matrices for each of the models :

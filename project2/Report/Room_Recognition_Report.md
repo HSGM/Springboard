@@ -73,7 +73,7 @@ The fine tuned models using the training data was next evaluated using the test 
 
 ![svm](SupportVector.png)
 
-![xgboost](xgboost.png)
+![xgboost](xgboost_1.png)
 
 
 The overall performance of the models seem to be comparable with the average scores for Logistic, Random Forest and SVM being 88% for Precision, Recall and F1 where as XGBOOST performance was 85%. The lower performance of XGBOOST is surprising. Is overfitting a concern here?
@@ -82,8 +82,8 @@ Below are the **Accuracies** for the Test and Train Data. Accuracy is the ratio 
 
 Model| Logistic|Random Forest| Support Vector| XGBOOST|
 -----|---------|-------------|---------------|----------|
-Train| 0.989|0.997|0.994|0.999|
-Test| 0.881|0.875|0.875| 0.850|
+Train| 0.989|0.997|0.994|0.990|
+Test| 0.881|0.875|0.875| 0.875|
 
 Looking at the drop in accuracies, XGBOOST has the highest drop indicating overfitting affecting this model the most.
 
@@ -109,7 +109,7 @@ In terms of recall kitchens and living rooms exhibit the lowest values for all m
 
 **F1-Score** is the harmonic mean of precision and recall thus taking into account both measures. Here we see that the most problematic rooms are the living rooms.
 
-![f1score](f1score_test.png)
+![f1score](f1_test.png)
 
 
 Below are a sample of the images that were incorrectly labelled by most of the models. All the images that were incorrectly labelled are in the notebook. It is interesting to note that many of the wrongly labelled images were common to all four models.

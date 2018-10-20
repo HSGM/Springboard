@@ -1,0 +1,6 @@
+{"model": "inceptionv3", "weights": "imagenet", 
+ "train_path": "room_recognition/dataset/train", "test_path": "room_recognition/dataset/test", 
+ "features_path": "room_recognition/output/train/features.h5", "labels_path": "room_recognition/output/train/labels.h5", 
+ "results": "room_recognition/output/svm/results.txt",
+ "classifier_path": "room_recognition/output/svm/classifier.pickle",
+ "model_path": "room_recognition/output/svm/model",  "seed": 9, "num_classes": 8}

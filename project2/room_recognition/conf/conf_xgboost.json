@@ -1,0 +1,7 @@
+{"model": "inceptionv3", "weights": "imagenet", 
+ "train_path": "room_recognition/dataset/train", "test_path": "room_recognition/dataset/test", 
+ "train_features_path": "room_recognition/output/train/features.h5", "train_labels_path": "room_recognition/output/train/labels.h5", 
+ "test_features_path": "room_recognition/output/test/features.h5", "test_labels_path": "room_recognition/output/test/labels.h5", 
+ "results": "room_recognition/output/xgboost/results.txt",
+ "classifier_path": "room_recognition/output/xgboost/classifier.pickle",
+ "model_path": "room_recognition/output/xgboost/model",  "seed": 9, "num_classes": 8}
