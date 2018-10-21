@@ -2,8 +2,8 @@
 
 Build an image classifier that will help label images belonging to different rooms in a home.
 
-Usefulness of project/prospective clients: Real Eastate Agents/ Vacation home Rental agencies
-A real estate agent may visit several homes in aday and take many fotos of homes. These fotos then woudl need to be manually sorted by room type for display. This could be labor intensive. A model that automatically classifies and labels the images would be a time saver and enable easy retrieval of images when necessary.
+Usefulness of project/prospective clients: Real Estate Agents/ Vacation home Rental agencies
+A real estate agent may visit several homes in a day and take many photos of homes. These photos then would need to be manually sorted by room type for display. This could be labor intensive. A model that automatically classifies and labels the images would be a time saver and enable easy retrieval of images when necessary.
 
 **Source of Images:** Images downloaded from here. 
                    http://web.mit.edu/torralba/www/indoor.html 
