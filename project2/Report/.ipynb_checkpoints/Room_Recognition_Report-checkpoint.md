@@ -3,7 +3,7 @@
 
 Vacation Time!! I wish!! As the summer comes to an end I think back to our family vacation by the beach. In planning for this much valued time together, I spent several hours scoring through the web for vacation rentals, looking for the idyllic place. I compared homes, their price, the location, the setting, the rooms, all with my dear family in mind. Whilst engaged thus, I wondered how one would build a visual image classifier to classify the different rooms in a home. It would probably help not only vacation home renters and rental agencies but also in real estate. Instead of laboriously manually labeliing every photo, with a image classifier the photos would automatically be sorted into the right category to be displayed as needed. So here is what is envisaged:
  
-![intro](.\inserts\class_intro.png)
+![intro](./inserts/class_intro.png)
 
 Think of a  situation where one has visited many homes and have clicked many fotos, instead of manually labelling your fotos you are able to pass them through a classifier that automatically labels them into the category of room. 
 
@@ -19,7 +19,7 @@ As building a custom deep learning model from scratch, requires extensive comput
 
 Here we will use option 2. The following diagram outlines the steps  taken in this project in building the classifier. 
 
-![pic2](.\inserts\flowchart.png)
+![pic2](./inserts/flowchart.png)
 
 
 Images for training and testing the model:
@@ -28,7 +28,7 @@ A total of 150 for each of the room categories bathroom, bedroom, corridor, dini
 Twenty of these images were reserved in a folder to test the model and the other 130 images per room category were used to build the model. 
 
 Here are a few of the images :
-![fotos](.\inserts\fotos.png)
+![fotos](./inserts/fotos.png)
 
 
 ### Feature Extraction Using Inception V3:
@@ -67,13 +67,13 @@ The fine tuned models using the training data was next evaluated using the test 
 
 
 
-![logistic](.\inserts\logistic.png)
+![logistic](./inserts/logistic.png)
 
-![random](.\inserts\randomforest.png)
+![random](./inserts/randomforest.png)
 
-![svm](.\inserts\SupportVector.png)
+![svm](./inserts/SupportVector.png)
 
-![xgboost](.\inserts\xgboost_1.png)
+![xgboost](./inserts/xgboost_1.png)
 
 
 The overall performance of the models seem to be comparable with the average scores for all models being 88% for Precision, Recall and F1-score  
@@ -95,7 +95,7 @@ Overall all the models exhibit the same pattern of ability to identify the room 
 
 **Precision** which is the proportion of the number of images that were correctly identified out of the  the total number of images that were labelled as belonging to a given room category.
 
-![precision](.\inserts\precision_test.png)
+![precision](./inserts/precision_test.png)
 
 
 Dining rooms, Bedrooms and Living rooms exhibit lower precision scores than the other categories for all models. 
@@ -103,20 +103,20 @@ Dining rooms, Bedrooms and Living rooms exhibit lower precision scores than the 
 
 **Recall** gives us a measure of how good the model is in detecting the images belonging to a certain category. It is the proportion of images belonging to a category that was correctly identified out of the total number of images of that category present.
 
-![recall](.\inserts\recall_test.png)
+![recall](./inserts/recall_test.png)
 
 In terms of recall kitchens and living rooms exhibit the lowest values for all models.
 
 **F1-Score** is the harmonic mean of precision and recall thus taking into account both measures. Here we see that the most problematic rooms are the living rooms.
 
-![f1score](.\inserts\f1_test.png)
+![f1score](./inserts/f1_test.png)
 
 
 Below are a sample of the images that were incorrectly labelled by most of the models. All the images that were incorrectly labelled are in the notebook. It is interesting to note that many of the wrongly labelled images were common to all four models.
 
 
 
-![wrong1](.\inserts\wrong_pics.png)| 
+![wrong1](./inserts/wrong_pics.png)| 
 
 
 #### What next? Some ways to possibly improve the models. 
