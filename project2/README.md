@@ -1,7 +1,7 @@
 
 In this project an image classifier was built. The inception v3 model with imagenet weights  was used as a feature extractor followed by fitting logisitic, random forest, support vector or xgboost model.
 
-The following jupyterlab notebooks contain the code that was used.
+The following jupyter notebooks contain the code that was used.
 
 Extract features from train (1) and test images (2).
 

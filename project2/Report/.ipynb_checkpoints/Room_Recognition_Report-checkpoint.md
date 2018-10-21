@@ -24,7 +24,7 @@ Here we will use option 2. The following diagram outlines the steps  taken in th
 
 Images for training and testing the model:
 
-A total of 150 for each of the room categories bathroom, bedroom, corridor, dining room, kitchen, living room,pantry and staircase were obtained from http://web.mit.edu/torralba/www/indoor.htmljmj3206. 
+A total of 150 for each of the room categories bathroom, bedroom, corridor, dining room, kitchen, living room,pantry and staircase were obtained from http://web.mit.edu/torralba/www/indoor.html 
 Twenty of these images were reserved in a folder to test the model and the other 130 images per room category were used to build the model. 
 
 Here are a few of the images :
